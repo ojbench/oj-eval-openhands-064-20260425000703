@@ -5,9 +5,11 @@
 #include <cmath>
 #include <concepts>
 #include <cstddef>
+#include <cstdint>
 #include <exception>
 #include <iostream>
 #include <ostream>
+#include <sstream>
 #include <span>
 #include <string_view>
 #include <vector>
