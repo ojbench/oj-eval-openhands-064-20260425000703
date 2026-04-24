@@ -6,15 +6,32 @@
 #include "sjtu_printf.hpp"
 
 int main() {
-    // Example usage - this will be replaced with actual input processing
-    // The actual implementation will depend on the test cases
+    // Test the printf implementation with various format strings
+    // This is a placeholder - the actual implementation will depend on the test cases
     
-    // Read input and process according to the problem requirements
-    std::string line;
-    while (std::getline(std::cin, line)) {
-        // For now, just echo the input to ensure basic functionality
-        std::cout << line << std::endl;
-    }
+    // Example 1: String formatting
+    std::string str = "Hello";
+    sjtu::printf("String: %s\n", str);
+    
+    // Example 2: Integer formatting
+    int num = 42;
+    sjtu::printf("Number: %d\n", num);
+    
+    // Example 3: Unsigned integer formatting
+    unsigned int unum = 100;
+    sjtu::printf("Unsigned: %u\n", unum);
+    
+    // Example 4: Default formatting with %_
+    sjtu::printf("Default int: %_\n", num);
+    sjtu::printf("Default uint: %_\n", unum);
+    sjtu::printf("Default string: %_\n", str);
+    
+    // Example 5: Vector formatting
+    std::vector<int> vec = {1, 2, 3, 4, 5};
+    sjtu::printf("Vector: %_\n", vec);
+    
+    // Example 6: Escaping %
+    sjtu::printf("Percentage: %%100\n");
     
     return 0;
 }
